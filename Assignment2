@@ -1,0 +1,72 @@
+Question2
+weatherTwo <- read.csv(""C:\Users\frazz\Downloads\weather2.b"")
+head(weatherTwo)
+
+Question3
+setwd("C:/Users/frazz/Downloads")
+weatherTwo <- read.csv("weather2.b")
+head(weatherTwo)
+
+Question4
+setwd("C:/Users/frazz/Downloads")
+data20130101 <- read.csv("data20130101.csv", row.names = 1)
+head(data20130101)
+
+Question5
+maxValue <- max(data20130101)
+minValue <- min(data20130101)
+
+maxValue
+minValue
+
+Question6
+maxPSI <- maxValue * 0.0145037738
+maxPSI
+
+Question 7
+setwd("C:/Users/frazz/Downloads")  
+
+file1 <- "data20130101.csv"
+file2 <- "data20130102.csv"
+file3 <- "data20130103.csv"
+file4 <- "data20130104.csv"
+file5 <- "data20130105.csv"
+file6 <- "data20130106.csv"
+file7 <- "data20130107.csv"
+file8 <- "data20130108.csv"
+file9 <- "data20130109.csv"
+
+overallMax <- 0
+
+fileData <- read.csv(file1, row.names = 1)
+overallMax <- max(overallMax, max(fileData))
+
+fileData <- read.csv(file2, row.names = 1)
+overallMax <- max(overallMax, max(fileData))
+
+fileData <- read.csv(file3, row.names = 1)
+overallMax <- max(overallMax, max(fileData))
+
+fileData <- read.csv(file4, row.names = 1)
+overallMax <- max(overallMax, max(fileData))
+
+fileData <- read.csv(file5, row.names = 1)
+overallMax <- max(overallMax, max(fileData))
+
+fileData <- read.csv(file6, row.names = 1)
+overallMax <- max(overallMax, max(fileData))
+
+fileData <- read.csv(file7, row.names = 1)
+overallMax <- max(overallMax, max(fileData))
+
+fileData <- read.csv(file8, row.names = 1)
+overallMax <- max(overallMax, max(fileData))
+
+fileData <- read.csv(file9, row.names = 1)
+overallMax <- max(overallMax, max(fileData))
+
+
+overallMax
+
+
+
